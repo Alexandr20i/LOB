@@ -1,0 +1,17 @@
+kind: ladder
+terminal: metascalp
+reference_size:
+- 2880
+- 1800
+roi:
+  x: 2444
+  y: 97
+  w: 396
+  h: 1680
+rows: 56
+price_col:
+- 0.6616161616161617
+- 0.952020202020202
+size_col:
+- 0.0
+- 0.6616161616161617
