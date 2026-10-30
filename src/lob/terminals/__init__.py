@@ -1,4 +1,6 @@
-from lob.terminals.registry import TERMINALS, TerminalProfile, get_terminal, register_terminal
-from lob.terminals import generic as _generic, metascalp as _metascalp  # noqa: F401  (регистрация)
+from lob.terminals.registry import TERMINALS, get_terminal, register_terminal, TerminalProfile
 
-__all__ = ["TERMINALS", "TerminalProfile", "get_terminal", "register_terminal"]
+__all__ = ["TERMINALS", "get_terminal", "register_terminal", "TerminalProfile"]
+
+# Импорт всех терминалов для регистрации
+from lob.terminals import metascalp  # noqa: F401
