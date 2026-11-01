@@ -1,6 +1,7 @@
-from lob.terminals.registry import TERMINALS, get_terminal, register_terminal, TerminalProfile
+from lob.terminals.registry import TERMINALS, TerminalProfile, get_terminal, register_terminal
 
 __all__ = ["TERMINALS", "get_terminal", "register_terminal", "TerminalProfile"]
 
-# Импорт всех терминалов для регистрации
-from lob.terminals import metascalp  # noqa: F401
+# Импорт всех терминалов для регистрации. generic нужен: на него ссылается
+# значение по умолчанию в scripts/calibrate.py.
+from lob.terminals import generic, metascalp  # noqa: E402, F401
